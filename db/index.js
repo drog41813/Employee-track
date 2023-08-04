@@ -213,6 +213,49 @@ function displayMenu()
               console.log("You chose the quit route");
               return;
           }
+          else if (userChoice == "Update Employee Role") {
+            console.log("You chose the update employee route");
+            inquirer.prompt([
+                {
+                    type: "list",
+                    name: "employee",
+                    message: "Please select an employee!",
+                    choices: ["Lebron James", "Joey Lee", "Bobby Portis", "Clive Rosfield", "Torgal WOOF"]
+                },
+                {
+                    type: "list",
+                    name: "role",
+                    message: "Please select role!",
+                    choices: ["Sales Lead", "Lead Engineer", "Software Engineer", "Lawyer", "Accountant"]
+                }
+            ])
+            .then((updateAnswer) => {
+                const selectedEmployee = updateAnswer.employee;
+                const selectedRole = updateAnswer.role;
+                let idNumberAssigned;
+                if (selectedRole == "Sales Lead") {
+                    idNumberAssigned = 1;
+                } else if (selectedRole == "Lead Engineer") {
+                    idNumberAssigned = 2;
+                } else if (selectedRole == "Software Engineer") {
+                    idNumberAssigned = 3;
+                } else if (selectedRole == "Lawyer") {
+                    idNumberAssigned = 4;
+                } else if (selectedRole == "Accountant") {
+                    idNumberAssigned = 5;
+                }
+                const updateEmployeeInformation = `
+                    UPDATE employees
+                    SET role_id = ?
+                    WHERE CONCAT(first_name, ' ', last_name) = ?;
+                `;
+                connect.query(updateEmployeeInformation, [idNumberAssigned, selectedEmployee], function (err, updateResult) {
+                    if (err) throw err;
+                    console.log("Employee role updated successfully!");
+                    displayMenu();
+                });
+            });
+        }
       })
 }
 displayMenu();
