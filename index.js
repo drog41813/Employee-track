@@ -53,7 +53,7 @@ function displayMenu() {
               type: "list",
               name: "manager",
               message: "Please select employee's manager!",
-              choices: ['Michael Scott', 'Jim Halpert']
+              choices: ['Luka Doncic', 'Walter White']
             },
           ])
             .then((response) => {
@@ -61,9 +61,9 @@ function displayMenu() {
               const lastName = response.lastName;
               const role = response.roleID;
               const manager = response.manager;
-              if (manager == "Michael Scott") {
+              if (manager == "Luka Doncic") {
                 mgNum = 1;
-              } else if (manager == "Jim Halpert") {
+              } else if (manager == "Walter White") {
                 mgNum = 2;
               };
               const addEmployee = `INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)`;
@@ -104,8 +104,8 @@ function displayMenu() {
                 eeID = response.eeName;
                 eeRole = response.eeRole;
                 const updateEmployee = `UPDATE employees
-        SET role_id = ?
-        WHERE id= ?`;
+                SET role_id = ?
+                WHERE id= ?`;
                 connect.query(updateEmployee, [eeRole, eeID], function (err, results) {
                   if (err) throw err;
                   console.log("Employee role updated successfully!");
