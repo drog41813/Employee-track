@@ -4,8 +4,8 @@
 This server-based node program will allow the user to take, add/save, and delete various notes as the application is being utilized. Once the server is live and the URL has been given, the user can access the URL and then proceed to take as many amount of new notes as the user wishes and will be added to the leftmost side once the save button is clicked. Also, any notes can be deleted by clicking on the trash can icon found next to the made note. 
 
 ## Usage 
-notes taker github repo: https://github.com/drog41813/notes-taker
-notes taker screenshot: ![Alt text](/notes-taker.png)
+employee tracker video demo: https://drive.google.com/file/d/165MfpOXyNoXtqCXZDtcBxx7vKxM8J4AW/view?usp=sharing
+employee tracker github repo: https://github.com/drog41813/Employee-track
 
 
 
@@ -16,6 +16,7 @@ The following site helped with learning how to set up various JS algorithms as w
 The following individual's github profile indicates partnership in regards to working together and collaborating/sharing constructive ideas with the password generator webpage: https://github.com/LucasWyski001
 The following individual's github profile indicates partnership in regards to working together and collaborating/sharing constructive ideas with the password generator webpage: https://github.com/micavilla
 The following individual's github profile indicates partnership in regards to working together and collaborating/sharing constructive ideas with the password generator webpage: https://github.com/Rockojoe2
+The following individual's github profile indicates partnership in regards to working together and collaborating/sharing constructive ideas with the password generator webpage: https://github.com/mayphamx
 
 
 ## License
