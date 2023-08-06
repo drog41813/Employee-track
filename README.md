@@ -1,18 +1,18 @@
 # Employee-track
 
 ## Description
-This server-based node program will allow the user to take, add/save, and delete various notes as the application is being utilized. Once the server is live and the URL has been given, the user can access the URL and then proceed to take as many amount of new notes as the user wishes and will be added to the leftmost side once the save button is clicked. Also, any notes can be deleted by clicking on the trash can icon found next to the made note. 
+This command line application utilizes the concept of updating and keeping track of databases by allowing the user to access a company's employee databases, which includes the specific roles, salaries, and managers within the company. The user will be able to choose from a menu with various options such as being able to view all employees, add employee, update roles, viewing all roles, adding roles, and viewing/adding departments. When viewing employees, employee roles, and departments, a table will appear on the command terminal that will indicate the respective employees, roles, salaries, and potential managerial properties. 
 
 ## Usage 
-employee tracker video demo: https://drive.google.com/file/d/165MfpOXyNoXtqCXZDtcBxx7vKxM8J4AW/view?usp=sharing
+employee tracker video demo: https://drive.google.com/file/d/165MfpOXyNoXtqCXZDtcBxx7vKxM8J4AW/view
 employee tracker github repo: https://github.com/drog41813/Employee-track
-
 
 
 
 ## Credits
 The following site assisted in basic and general JS concepts as well as how to operate JS itself using various methods and syntax: https://www.w3schools.com/js/js_syntax.asp
 The following site helped with learning how to set up various JS algorithms as well as how they affected your code as a whole: https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript
+The following site helped with sql functionality as well as how to update various databases: https://www.w3schools.com/sql/sql_update.asp
 The following individual's github profile indicates partnership in regards to working together and collaborating/sharing constructive ideas with the password generator webpage: https://github.com/LucasWyski001
 The following individual's github profile indicates partnership in regards to working together and collaborating/sharing constructive ideas with the password generator webpage: https://github.com/micavilla
 The following individual's github profile indicates partnership in regards to working together and collaborating/sharing constructive ideas with the password generator webpage: https://github.com/Rockojoe2
